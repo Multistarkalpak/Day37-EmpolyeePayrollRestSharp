@@ -89,5 +89,37 @@ namespace AddressBookTest
                 Console.WriteLine(response.Content);
             }
         }
+        /// <summary>
+        /// Update Entry in Address Book JSONServer and sync with AddressBook Application Memory
+        /// </summary>
+        [Test]
+        public void OnCallingPutAPI_ReturnContactObjects()
+        {
+            //Arrange
+            //Initialize the request for PUT to add new employee
+            RestRequest request = new RestRequest("/contacts/7", Method.Put);
+            JsonObject jsonObj = new JsonObject();
+            jsonObj.Add("firstname", "Yash");
+            jsonObj.Add("lastname", "V");
+            jsonObj.Add("phoneNo", "7858070934");
+            jsonObj.Add("address", "FC Real Madrid");
+            jsonObj.Add("city", "Madrid");
+            jsonObj.Add("state", "Spain");
+            jsonObj.Add("zip", "535678");
+            jsonObj.Add("email", "yash7@gmail.com");
+            //Added parameters to the request object such as the content-type and attaching the jsonObj with the request
+            request.AddParameter("application/json", jsonObj, ParameterType.RequestBody);
+
+            //Act
+            RestResponse response = client.Execute(request);
+
+            //Assert
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Contact contact = JsonConvert.DeserializeObject<Contact>(response.Content);
+            Assert.AreEqual("Yash", contact.FirstName);
+            Assert.AreEqual("V", contact.LastName);
+            Assert.AreEqual("535678", contact.Zip);
+            Console.WriteLine(response.Content);
+        }
     }
 }
