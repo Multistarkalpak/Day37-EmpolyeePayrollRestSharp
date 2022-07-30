@@ -1,0 +1,97 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstname": "Kalpak",
+      "lastname": "Chincholkar",
+      "phoneNo": "8618199771",
+      "address": "Basaveshwarnagar",
+      "city": "Wani",
+      "state": "Maharashtra",
+      "zip": "560079",
+      "email": "kalpakc28@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Jitesh",
+      "lastname": "Chivane",
+      "phoneNo": "9044567887",
+      "address": "Kayar",
+      "city": "Wani",
+      "state": "Maharashtra",
+      "zip": "354676",
+      "email": "jitesh97@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstname": "Gaurav",
+      "lastname": "gahukar",
+      "phoneNo": "8754457887",
+      "address": "Chidambaram",
+      "city": "Bengalaru",
+      "state": "karanataka",
+      "zip": "998765",
+      "email": "Gaurav@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstname": "Dhiraj",
+      "lastname": "Mane",
+      "phoneNo": "9254567887",
+      "address": "Eden Gardens",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "zip": "115654",
+      "email": "DhirajMane09@gmail.com"
+    },
+    {
+      "firstname": "Arun",
+      "lastname": "R",
+      "phoneNumber": "9577456345",
+      "address": "Feroz Shah Kotla",
+      "city": "New Delhi",
+      "state": "New Delhi",
+      "zip": "547677",
+      "email": "vs@gmail.com",
+      "id": 5
+    },
+    {
+      "firstname": "Ankitha",
+      "lastname": "H",
+      "phoneNumber": "9756723456",
+      "address": "Chinnaswamy",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zip": "435627",
+      "email": "yc@gmail.com",
+      "id": 6
+    },
+    {
+      "firstname": "Yash",
+      "lastname": "V",
+      "phoneNumber": "9954564345",
+      "address": "Mohali",
+      "city": "Mohali",
+      "state": "Punjab",
+      "zip": "113425",
+      "email": "klr@gmail.com",
+      "id": 7
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
